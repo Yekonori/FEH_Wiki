@@ -20,7 +20,8 @@
 		<!-- CSS Bootstrap -->
 	    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
 	    <!-- CSS perso' -->
-	    <link href="css/main.css" type="text/css" rel="stylesheet">
+	    <link href="css/general.css" type="text/css" rel="stylesheet">
+	    <link href="css/index.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- ******************************** HEADER ******************************** -->
@@ -39,6 +40,7 @@
     	<section class="heros">
     		<div class="container-fluid">
     			<div class="row 2">
+    			<!-- ******************************** ASIDE ******************************** -->
     				<div class="col-md-1">
     					<aside class="text-center">
     						<a href="#">TEST LIEN</a>
@@ -50,19 +52,21 @@
     				</div> <!-- ./end div.col-md-1 -->
     				<div class="col-md-11">
     					<div class="row 3">
+    					<!-- ******************************** Liens Rapides ******************************** -->
     						<div class="col-md-12">
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
-    							<a href="#">---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
     						</div> <!-- ./end div.col-md-12 -->
     					</div> <!-- ./end div.row 3-->
     					<div class="col-md-7 text-center">
     						<h1>Nouveaux Héros :</h1>
     						<div class="row 4">
+    						<!-- ******************************** Derniers Héros ******************************** -->
 	    						<div class="col-md-12">
 	    							<?php
 						                $LastHeros = "SELECT `Nom :`FROM `héros` ORDER BY `ID :` DESC LIMIT 0, 4";
@@ -80,8 +84,10 @@
 						                  $i++;
 						                }
 						            ?>
+						            <hr/>
 	    						</div> <!-- ./end div.col-md-12 -->
 	    						<div class="col-md-12">
+	    						<!-- ******************************** Tous les Héros ******************************** -->
 	    							<h2>Les Héros :</h2>
 	    							<?php
 						                $i = 0;
@@ -105,13 +111,17 @@
     							<div class="col-md-12">
     								<div class="row 6">
     									<div class="col-md-12">
-    										<h4>Dernière MàJ :</h4>
+    										<h4>Dernière MàJ et annonces :</h4>
     									</div> <!-- ./end div.col-md-12	-->
     									<div class="col-md-12 text-left">
+    									<!-- Créer une table MàJ&Event -->
     										<ul>
-    											<li>MàJ 1.3.0</li>
-    											<li>MàJ 1.2.0</li>
-    											<li>MàJ 1.1.0</li>
+    											<li>[8 Mai 2017]</li>
+    											<p>Version 1.3.0 : MàJ de l'arène, Tournois annoncé et Evenement Exp x1,5. </p>
+    											<li>[2 Mai 2017]</li>
+    											<p>Grande Bataille contre Xander</p>
+    											<li>[28 Avril 2017]</li>
+    											<p>Focus : Festival des Héros</p>
     										</ul>
     									</div> <!-- ./end div.col-md-12	-->
     								</div> <!-- ./end div.row 6 -->
