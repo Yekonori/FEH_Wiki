@@ -1,0 +1,14 @@
+#==================
+#= 10 Personnages =
+#==================
+
+_Ike
+_Roy
+_Catria
+_Hector
+_Anna
+_Ursula
+_Nowi
+_Niles
+_Kagero
+_Clarine

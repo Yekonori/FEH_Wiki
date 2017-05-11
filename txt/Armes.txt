@@ -1,0 +1,258 @@
+#========
+#= Épée =
+#========
+
+_Épée Fer
+_Épée Acier
+_Épée Argent
+_Épée Argent +
+_Épée Héros
+_Épée Héros +
+-------------- Spéciaux --------------
+_Fer Létal
+_Fer Létal +
+_Wo Dao
+_Wo Dao +
+_Cuiracide
+_Cuiracide +
+_Épée Rubis
+_Épée Rubis +
+------------ Légendaires ------------
+_Folkvangr
+_Falchion
+_Tyrfing
+_Mistilteinn
+_Lame du Sceau
+_Eckesachs
+_Sol Katti
+_Durandal
+_Sieglinde
+_Ragnell
+_Yato
+_Raijinto
+_Siegfried
+
+
+#=======================================================#
+#=======================================================#
+
+#=========
+#= Lance =
+#=========
+
+_Lance Fer
+_Lance Acier
+_Lance Argent
+_Lance Argent +
+_Lance Héros
+_Lance Héros +
+-------------- Spéciaux --------------
+_Lance Létale
+_Lance Létale +
+_Épieu Lourd
+_Épieu Lourd +
+_Lance Saphir
+_Lance Saphir +
+------------ Légendaires ------------
+_Fensalir
+_Gradivus
+_Siegmund
+------------ Evenements -------------
+_Lance Carotte
+_Lance Carotte +
+
+
+#=======================================================#
+#=======================================================#
+
+#=========
+#= Hache =
+#=========
+
+_Hache Fer
+_Hache Acier
+_Hache Argent
+_Hache Argent +
+_Hache Héros
+_Hache Héros +
+-------------- Spéciaux --------------
+_Hache Létale
+_Hache Létale +
+_Marteau
+_Marteau +
+_Hache Émeraude
+_Hache Éemraude +
+------------ Légendaires ------------
+_Noatun
+_Hauteclaire
+_Armadès
+------------ Evenements -------------
+_Hache Carotte
+_Hache Carotte +
+
+
+#=======================================================#
+#=======================================================#
+
+#====================
+#= Tome - (R->B->V) =
+#====================
+
+-----[Rouge]-----
+_Feu
+_Inferno
+_Bolganone
+_Bolganone +
+_Flux
+_Ravage
+_Fenrir
+_Fenrir +
+-----[Bleu]-----
+_Foudre
+_Éclair
+_Thoron
+_Thoron +
+-----[Vert]-----
+_Vent
+_Tempête
+_Fimbulvetr
+_Fimbulvetr +
+-------------- Spéciaux --------------
+-----[Rouge]-----
+_Serres Rubis
+_Serres Rubis +
+_Crocs Rubis
+_Crocs Rubis +
+_Lames Rubis
+_Lames Rubis +
+-----[Bleu]-----
+_Serres Saphir
+_Serres Saphir +
+_Crocs Saphir
+_Crocs Saphir +
+_Lames Saphir
+_Lames Saphir +
+-----[Vert]-----
+_Serres Émeraude
+_Serres Émeraude +
+_Crocs Émeraude
+_Crocs Émeraude +
+_Lames Émeraude
+_Lames Émeraude +
+------------ Légendaires ------------
+-----[Rouge]-----
+_Cymbeline
+_Brynhildr
+-----[Bleu]-----
+_Valaskjálf
+_Aura
+_Tonnerre Double
+-----[Vert]-----
+_Élivágar
+_Excalibur
+_Naga
+------------ Evenements -------------
+-----[Bleu]-----
+_Œuf Bleu
+_Œuf Bleu +
+-----[Vert]-----
+_Œuf Vert
+_Œuf Vert +
+
+
+#=======================================================#
+#=======================================================#
+
+#=======================
+#= Souffle - (R->B->V) =
+#=======================
+
+-----[Rouge]-----
+_Souffle Brûlant
+_Souffle Brûlant +
+_Flametongue (!VF)
+_Flametongue + (!VF)
+-----[Bleu]-----
+_Souffle Brûlant
+_Souffle Brûlant +
+-----[Vert]-----
+_Souffle Brûlant
+_Souffle Brûlant +
+-------------- Spéciaux --------------
+-----[Rouge]-----
+_Souffle Électrique
+_Souffle Électrique +
+-----[Bleu]-----
+_Souffle Lumineux
+_Souffle Lumineux +
+_Souffle Électrique
+_Souffle Électrique +
+_Souffle Sombre
+_Souffle Sombre +
+-----[Vert]-----
+_Souffle Lumineux
+_Souffle Lumineux +
+
+
+#=======================================================#
+#=======================================================#
+
+#=======
+#= Arc =
+#=======
+
+_Arc Fer
+_Arc Acier
+_Arc Argent
+_Arc Argent +
+_Arc Héros
+_Arc Héros +
+-------------- Spéciaux --------------
+_Arc Létal
+_Arc Létal +
+_Arc Enflammé
+_Arc Enflammé +
+_Arc d'Assassin
+_Arc d'Assassin +
+------------ Légendaires -------------
+_Parthia
+_Yumi Fujin
+
+
+#=======================================================#
+#=======================================================#
+
+#=========
+#= Dague =
+#=========
+
+_Dague Fer
+_Dague Acier
+_Dague Argent
+_Dague Argent +
+-------------- Spéciaux --------------
+_Dague Fourbe
+_Dague Fourbe
+_Smoke Dagger (!VF)
+_Smoke Dagger (!VF)
+_Dague Poison
+_Dague Poison
+------------ Légendaires -------------
+_Dague Mortelle
+
+
+#=======================================================#
+#=======================================================#
+
+#=========
+#= Bâton =
+#=========
+
+_Assaut
+-------------- Spéciaux --------------
+_Hémorragie
+_Vampirisme
+_Terreur
+_Lenteur
+_Gravité
+_Panique
