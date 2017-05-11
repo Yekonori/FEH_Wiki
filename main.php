@@ -2,7 +2,7 @@
   #1. Connexion à la base de donnée
   include("ConnexionFE.php");
 
-  $sql = "SELECT `Nom :` FROM `héros` ORDER BY `ID :` DESC LIMIT 0, 4";
+  $sql = "SELECT * FROM `héros` ORDER BY `ID :`";
 
   $mesHeros = mysqli_query($link, $sql);
 
@@ -20,7 +20,7 @@
     <!-- CSS Bootstrap -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <!-- CSS perso' -->
-    <link href="css/general.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <!-- ******************************** HEADER ******************************** -->
@@ -56,8 +56,11 @@
               </div> <!-- ./end div.col-md-8 -->
               <div class="col-md-8 NewHeros">
               <?php
+                $LastHeros = "SELECT `Nom :`FROM `héros` ORDER BY `ID :` DESC LIMIT 0, 4";
+
+                $NvHeros = mysqli_query($link, $LastHeros);
                 $i = 0;
-                while ($data = mysqli_fetch_assoc($mesHeros)) {
+                while ($data = mysqli_fetch_assoc($NvHeros)) {
                   echo '<div class="text-center" style="display:inline-block; width:24%;">
                           <p>
                             <img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid black ;"/>
@@ -69,6 +72,22 @@
                 }
               ?>
               </div> <!-- ./end div.col-md-8 & NewHeros -->
+              <div class="col-md-8 text-center Heros">
+              <h2>Les Héros : </h2>
+              <?php
+                $i = 0;
+                while ($data = mysqli_fetch_assoc($mesHeros)) {
+                  echo '<div class="text-center" style="display:inline-block; width:8%; margin:0 5px;">
+                          <p>
+                            <a href="#">
+                              <img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid black; border-radius:100%; width:80%;"/>
+                            </a>
+                          </p>
+                        </div>';
+                  $i++;
+                }
+              ?>
+              </div> <!-- ./end div.Heros -->
             </div> <!-- ./end div.row -->
           </div> <!-- ./end div.col-md-11 -->
         </div> <!-- ./end div.row -->
