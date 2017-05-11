@@ -1,18 +1,9 @@
-/*div {
-	border:1px solid black;
-}*/
-
 body {
 	background-color:#EDFEFB;
-	overflow-x:hidden;
 }
 
 .logo {
 	filter:drop-shadow(0px 0px 3.5px #999999) drop-shadow(1px 1px 1px #999999);
 	width:100%;
-	padding:20px 0;
-}
-
-nav a {
-	display:block;
+	padding:10px 0;
 }
