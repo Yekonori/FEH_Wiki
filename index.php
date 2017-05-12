@@ -39,7 +39,7 @@
     	<!-- ************************************************************************ -->
     	<header>
     		<div class="container-fluid">
-    			<div class="row 1">
+    			<div class="row">
     				<div class="col-md-3">
     					<img src="images/imgs/Logo.png" title="Logo" alt="Logo" class="logo"/>
     				</div> <!-- ./end div.col-md-3 -->
@@ -50,19 +50,51 @@
     	<!-- ******************************************************************************* -->
     	<section class="heros">
     		<div class="container-fluid">
-    			<div class="row 2">
+    			<div class="row">
     			<!-- ******************************** ASIDE ******************************** -->
     				<div class="col-md-1">
     					<aside class="text-center">
-    						<a href="#">TEST LIEN</a>
-    						<a href="#">TEST LIEN</a>
-    						<a href="#">TEST LIEN</a>
-    						<a href="#">TEST LIEN</a>
-    						<a href="#">TEST LIEN</a>
+                        <!-- ******************************** Collapse Nav ******************************** -->
+                            <a href="#">
+                                <div data-toggle="collapse" href="#heros" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="heros"></span>Héros
+                                </div>
+                            </a>
+                            <div class="collapse" id="heros">
+                              <div>
+                                <a href="#">Lien 1</a><br/>
+                                <a href="#">Lien 2</a><br/>
+                                <a href="#">Lien 3</a>
+                              </div>
+                            </div>
+                            <a href="#">
+                                <div data-toggle="collapse" href="#techniques" aria-expanded="false" aria-controls="techniques">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Techniques
+                                </div>
+                            </a>
+                            <div class="collapse" id="techniques">
+                              <div>
+                                <a href="#">Lien 1</a><br/>
+                                <a href="#">Lien 2</a><br/>
+                                <a href="#">Lien 3</a>
+                              </div>
+                            </div>
+                            <a href="#">
+                                <div data-toggle="collapse" href="#autre" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="autre"></span>Autre
+                                </div>
+                            </a>
+                            <div class="collapse" id="autre">
+                              <div>
+                                <a href="#">Lien 1</a><br/>
+                                <a href="#">Lien 2</a><br/>
+                                <a href="#">Lien 3</a>
+                              </div>
+                            </div>
     					</aside>
     				</div> <!-- ./end div.col-md-1 -->
     				<div class="col-md-11">
-    					<div class="row 3">
+    					<div class="row">
     					<!-- ******************************** Liens Rapides ******************************** -->
     						<div class="col-md-12">
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
@@ -73,12 +105,12 @@
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
     						</div> <!-- ./end div.col-md-12 -->
-    					</div> <!-- ./end div.row 3-->
+    					</div> <!-- ./end div.row -->
                         <div class="col-md-7 text-center">
     						<h1>Nouveaux Héros :</h1>
-    						<div class="row 4">
+    						<div class="row">
     						<!-- ******************************** Derniers Héros ******************************** -->
-	    						<div class="col-md-12">
+	    						<div class="col-md-12 derniersHeros">
                                     <?php
 					                   $i = 0;
 					                   while ($data = mysqli_fetch_assoc($NvHeros)) {
@@ -111,30 +143,30 @@
                                         }
                                     ?>
 	    						</div> <!-- ./end div.col-md-12 -->
-    						</div> <!-- ./end div.row 4 -->
+    						</div> <!-- ./end div.row -->
     					</div> <!-- ./end div.col-md-7 -->
     					<div class="col-md-4 col-md-offset-1 text-center">
     						<h3>Actualités : </h3>
-    						<div class="row 5">
+    						<div class="row">
     							<div class="col-md-12">
-    								<div class="row 6">
+    								<div class="row">
     									<div class="col-md-12">
     										<h4>Dernière MàJ et annonces :</h4>
     									</div> <!-- ./end div.col-md-12	-->
     									<div class="col-md-12 text-left">
-    									<!-- Créer une table MàJ&Event -->
+    									<!-- ************************* Dernieres Annonces ************************* -->
     									<ul>
-    									<?php
-							                $i = 0;
-							                while ($data = mysqli_fetch_assoc($dernieresAnnonces)) {
-							                	echo '<li>'.$data['Titre :'].'</li>';
-							                	echo '<p>'.$data['Description :'].'</p>';
-							                	$i++;
-							            	}
-							            ?>
+        									<?php
+    							                $i = 0;
+    							                while ($data = mysqli_fetch_assoc($dernieresAnnonces)) {
+    							                	echo '<li>'.$data['Titre :'].'</li>';
+    							                	echo '<p>'.$data['Description :'].'</p>';
+    							                	$i++;
+    							            	}
+    							            ?>
 							            </ul>
     									</div> <!-- ./end div.col-md-12	-->
-    								</div> <!-- ./end div.row 6 -->
+    								</div> <!-- ./end div.row -->
     							</div> <!-- ./end div.col-md-12 -->
     							<div class="col-md-12">
     								<div class="row 7">
@@ -142,6 +174,7 @@
     										<h5>Héros Bonus d'Arène :</h5>
     									</div> <!-- ./end div.col-md-12 -->
     									<div class="col-md-12">
+                                        <!-- ************************* Héros Bonus d'Arène ************************* -->
                                         <!-- Héros Bonus d'Arene -->
                                             <?php
                                                 $i = 0;
@@ -162,12 +195,13 @@
     										<h6>Focus Actuels :</h6>
     									</div> <!-- ./end div.col-md-12 -->
     									<div class="col-md-12">
+                                        <!-- ************************* Bannières Actuelles ************************* -->
     										<?php
                                                 $i = 0;
                                                 $disparition = $data['Timestamp :'];
                                                 $dateajd = date('Y-m-d');
                                                 while ($data = mysqli_fetch_assoc($bannieresActuelle)) {
-                                                    if ($disparition < $dateajd) {
+                                                    if ($data['Timestamp :'] > $dateajd) {
                                                         echo '<div class="text-center" style="display:inline-block; width:70%;">
                                                                 <p>
                                                                     <img src="images/bannieres/'.$data['Fichier :'].'.png" style=" width:75%"/>
@@ -182,11 +216,13 @@
     									</div> <!-- ./end div.col-md-12 -->
     								</div> <!-- ./end div.row 8 -->
     							</div> <!-- ./end div.col-md-12 -->
-    						</div> <!-- ./end div.row 5 -->
+    						</div> <!-- ./end div.row -->
     					</div> <!-- ./end div.col-md-4 -->
     				</div> <!-- ./end div.col-md-11 -->
-    			</div> <!-- ./end div.row 2-->
+    			</div> <!-- ./end div.row -->
     		</div> <!-- ./end div.container-fluid -->
     	</section> <!-- ./end section.heros -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
 	</body>
 </html>
