@@ -14,6 +14,9 @@
     $persoArene = "SELECT `Nom :` FROM `bonus_arene` ORDER BY `ID :`";
     $bonusArene = mysqli_query($link, $persoArene);
 
+    $bannieres = "SELECT * FROM `bannieres` ORDER BY `ID :`";
+    $bannieresActuelle = mysqli_query($link, $bannieres);
+
     if (mysqli_connect_errno($link)) {
         die("Erreur de connexion : ".mysqli_connect_error($link));
     }
@@ -79,7 +82,7 @@
                                     <?php
 					                   $i = 0;
 					                   while ($data = mysqli_fetch_assoc($NvHeros)) {
-					                       echo '<div class="text-center" style="display:inline-block; width:24%;">
+                                            echo '<div class="text-center" style="display:inline-block; width:24%;">
 				                                    <p>
 					                                   <img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid rgba(175, 174, 174, 0.85); width:40%"/>
 					                                   <br/>
@@ -139,6 +142,7 @@
     										<h5>Héros Bonus d'Arène :</h5>
     									</div> <!-- ./end div.col-md-12 -->
     									<div class="col-md-12">
+                                        <!-- Héros Bonus d'Arene -->
                                             <?php
                                                 $i = 0;
                                                 while ($data = mysqli_fetch_assoc($bonusArene)) {
@@ -158,9 +162,23 @@
     										<h6>Focus Actuels :</h6>
     									</div> <!-- ./end div.col-md-12 -->
     									<div class="col-md-12">
-    										<img src="#" title="#" alt="#"/>
-    										<img src="#" title="#" alt="#"/>
-    										<img src="#" title="#" alt="#"/>
+    										<?php
+                                                $i = 0;
+                                                $disparition = $data['Timestamp :'];
+                                                $dateajd = date('Y-m-d');
+                                                while ($data = mysqli_fetch_assoc($bannieresActuelle)) {
+                                                    if ($disparition < $dateajd) {
+                                                        echo '<div class="text-center" style="display:inline-block; width:70%;">
+                                                                <p>
+                                                                    <img src="images/bannieres/'.$data['Fichier :'].'.png" style=" width:75%"/>
+                                                                    <br/>
+                                                                    '.$data['Nom :'].'
+                                                                </p>
+                                                            </div>';
+                                                    }
+                                                    $i++;
+                                                }
+                                            ?>
     									</div> <!-- ./end div.col-md-12 -->
     								</div> <!-- ./end div.row 8 -->
     							</div> <!-- ./end div.col-md-12 -->
