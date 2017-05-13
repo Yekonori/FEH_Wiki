@@ -53,7 +53,7 @@
     			<div class="row">
     			<!-- ******************************** ASIDE ******************************** -->
     				<div class="col-md-1">
-    					<aside>
+    					<aside class="Nav">
                         <!-- ******************************** Collapse Nav ******************************** -->
                             <a href="#">
                                 <div data-toggle="collapse" href="#heros" aria-expanded="false">
@@ -67,6 +67,7 @@
                                 <a href="#">Lien 3</a>
                               </div>
                             </div>
+                            <hr/>
                             <a href="#">
                                 <div data-toggle="collapse" href="#techniques" aria-expanded="false" aria-controls="techniques">
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Techniques
@@ -79,6 +80,7 @@
                                 <a href="#">Lien 3</a>
                               </div>
                             </div>
+                            <hr/>
                             <a href="#">
                                 <div data-toggle="collapse" href="#autre" aria-expanded="false">
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="autre"></span>Autre
@@ -96,15 +98,19 @@
     				<div class="col-md-11">
     					<div class="row">
     					<!-- ******************************** Liens Rapides ******************************** -->
-    						<div class="col-md-12">
-                            <!-- ********* DIV A DEFINIR ********* -->
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
-    							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
+    						<div class="col-md-12 text-center">
+                                <div class="col-md-4 liensRapides">
+                                    <img src="images/menu/Icon_Cercle_Alfonse.png" alt="#" title="#">
+                                    <a href="#">Héros</a>
+                                </div> <!-- ./end div.col-md-4 -->
+                                <div class="col-md-4 liensRapides">
+                                    <img src="images/menu/Icon_Cercle_Sharena.png" alt="#" title="#">
+                                    <a href="#">Technique</a>
+                                </div> <!-- ./end div.col-md-4 -->
+                                <div class="col-md-4 liensRapides">
+                                    <img src="images/menu/Icon_Cercle_Lucina.png" alt="#" title="#">
+                                    <a href="#">Autre</a>
+                                </div> <!-- ./end div.col-md-4 -->
     						</div> <!-- ./end div.col-md-12 -->
     					</div> <!-- ./end div.row -->
                         <div class="col-md-7 text-center">

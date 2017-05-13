@@ -1,4 +1,15 @@
-.row hr {
+/************************************** SYLE INDEX **************************************/
+/****************************************************************************************/
+
+.liensRapides img {
+	width:35%;
+}
+
+.liensRapides a {
+	display:block;
+}
+
+.derniersHeros hr {
     height: 1px;
     color: #aaa;
     background-color: #aaa;

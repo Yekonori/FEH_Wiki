@@ -1,3 +1,6 @@
+/************************************** STYLE GENERAL **************************************/
+/*******************************************************************************************/
+
 body {
 	background-color:#EDFEFB;
 }
@@ -8,6 +11,14 @@ body {
 	padding:10px 0;
 }
 
-* {
-	color:red;
+.nav hr {
+    height: 1px;
+    color: #aaa;
+    background-color: #aaa;
+    border: 200;
+    margin: .2em .2em;
+}
+
+.nav a.menu {
+	padding-right:10000px
 }
