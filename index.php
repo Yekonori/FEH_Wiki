@@ -53,14 +53,14 @@
     			<div class="row">
     			<!-- ******************************** ASIDE ******************************** -->
     				<div class="col-md-1">
-    					<aside class="text-center">
+    					<aside>
                         <!-- ******************************** Collapse Nav ******************************** -->
                             <a href="#">
                                 <div data-toggle="collapse" href="#heros" aria-expanded="false">
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="heros"></span>Héros
                                 </div>
                             </a>
-                            <div class="collapse" id="heros">
+                            <div class="collapse text-center" id="heros">
                               <div>
                                 <a href="#">Lien 1</a><br/>
                                 <a href="#">Lien 2</a><br/>
@@ -72,7 +72,7 @@
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Techniques
                                 </div>
                             </a>
-                            <div class="collapse" id="techniques">
+                            <div class="collapse text-center" id="techniques">
                               <div>
                                 <a href="#">Lien 1</a><br/>
                                 <a href="#">Lien 2</a><br/>
@@ -84,7 +84,7 @@
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="autre"></span>Autre
                                 </div>
                             </a>
-                            <div class="collapse" id="autre">
+                            <div class="collapse text-center" id="autre">
                               <div>
                                 <a href="#">Lien 1</a><br/>
                                 <a href="#">Lien 2</a><br/>
@@ -97,6 +97,7 @@
     					<div class="row">
     					<!-- ******************************** Liens Rapides ******************************** -->
     						<div class="col-md-12">
+                            <!-- ********* DIV A DEFINIR ********* -->
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
     							<a href="#"><img src="#" title="#" alt="#"/>---LIEN RAPIDE---</a>
@@ -204,7 +205,7 @@
                                                     if ($data['Timestamp :'] > $dateajd) {
                                                         echo '<div class="text-center" style="display:inline-block; width:70%;">
                                                                 <p>
-                                                                    <img src="images/bannieres/'.$data['Fichier :'].'.png" style=" width:75%"/>
+                                                                    <img src="images/bannieres/'.$data['Fichier :'].'.png" style=" width:75%" title="'.$data['Timestamp :'].'"/>
                                                                     <br/>
                                                                     '.$data['Nom :'].'
                                                                 </p>
