@@ -4,7 +4,6 @@ Site Web sous format de Wiki concernant Fire Emblem Heroes.
 
 Grande base de donnée concentrant des informations de tout type sur le jeu - en français - tel que : les Héros, leurs techniques, passifs, et statistiques.
 
-![wireframe](https://preview.ibb.co/mpcz7a/Accueil.png "wireframe 1")
 
 # Technologies
 
