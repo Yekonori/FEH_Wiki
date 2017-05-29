@@ -1,8 +1,8 @@
 # FEH_Wiki
 
-Site Web sous format de Wiki
+Site Web sous format de Wiki concernant Fire Emblem Heroes.
 
-Wiki contenant les diffèrentes informations sur le jeu, en français - des personnages, aux techniques.
+Grande base de donnée concentrant des informations de tout type sur le jeu - en français - tel que : les Héros, leurs techniques, passifs, et statistiques.
 
 # Technologies
 
