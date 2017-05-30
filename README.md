@@ -14,12 +14,12 @@ Les inscrits pourront, par formulaire, envoyer des informations qui seront à va
 # Fonctionnalités 
 
 - Liste des Héros et description (Statistiques, Armes, Aptitiudes)
-Liste des Armes (Puissance, Porté, Possesseurs et Transmission)
-Liste des Aptitudes (Effet, Posseseurs et Transmission)
+- Liste des Armes (Puissance, Porté, Possesseurs et Transmission)
+- Liste des Aptitudes (Effet, Posseseurs et Transmission)
 
-Accès aux dernières Annonces du jeu
-Affichage des Héros Bonus de l'arène de la semaine
-Affichage des Bannières de Tirage
+- Accès aux dernières Annonces du jeu
+- Affichage des Héros Bonus de l'arène de la semaine
+- Affichage des Bannières de Tirage
 
 
 # Technologies
