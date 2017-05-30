@@ -10,6 +10,8 @@ Ainsi, le site contiendra des pages décrivant le personnage, son moyen d'obtent
 
 Les inscrits pourront, par formulaire, envoyer des informations qui seront à valider pour ajouter du contenu.
 
+<img src="images/GIT/Accueil.jpg" width="350"/>
+
 
 # Fonctionnalités 
 
