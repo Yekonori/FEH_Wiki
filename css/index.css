@@ -1,12 +1,63 @@
 /************************************** SYLE INDEX **************************************/
 /****************************************************************************************/
 
-.liensRapides img {
-	width:35%;
+h1 {
+	font-size:35px;
+	margin:20px 0;
+	color:white;
+	text-shadow:3px 3px 3px black;
 }
 
-.liensRapides a {
-	display:block;
+h2 {
+	font-size:30px;
+	margin:20px 0;
+}
+
+h3, h4, h5 {
+	font-size:26px;
+	margin:15px 0;
+}
+
+#heros {
+	background-color:#DEEAF6;
+}
+
+.etat {
+	background-color:#DEEAF6;
+	margin-bottom:65px;
+	padding:25px;
+	border:3px solid #0B4E87;
+	border-radius:50px;
+	font-size:16px;
+}
+
+.etat p {
+	margin:auto;
+	font-size:20px;
+}
+
+.etat ul {
+	font-size:19px;
+	padding:0;
+	margin:0;
+	padding-top:12px;
+}
+
+.avance p {
+	font-size:27px;
+	font-weight:bold;
+}
+
+#nvHeros {
+	background-color:#0B4E87;
+}
+
+.derniersHeros {
+	padding-top:30px;
+}
+
+.derniersHeros a {
+	font-size:22px;
 }
 
 .derniersHeros hr {
@@ -15,4 +66,81 @@
     background-color: #aaa;
     border: 0;
     margin: .2em 0;
+}
+
+.listeDerniersHeros img {
+	margin-bottom:7px;
+}
+
+.listeHeros img {margin:4px;}
+
+.actu {
+	background-color:#0B4E87;
+	color:white;
+	text-shadow:3px 3px 3px black;
+}
+
+#infos {
+	background-color:#deeaf6;
+	border-radius:15px 0 15px 0;
+}
+
+#infos li, #infos p {
+	font-size:19px;
+}
+
+#maj, #arene, #focus {padding:20px 0;}
+
+#arene img {margin:5px;}
+
+#heros {
+	border-radius:0 0 20px 20px;
+}
+
+#nvHeros {
+	border-radius:15px 15px 0 0;
+}
+
+#one {
+	border-radius:15px 0 0 0;
+}
+
+.listeDerniersHeros,
+.listeHeros,
+.imgListeHeros {
+	display:inline-block;
+}
+
+.listeDerniersHeros {
+	width:24%;
+}
+
+.imgDerniersHeros,
+.imgListeHeros, 
+.imgHerosArene{
+	border:1.5px solid rgba(175, 174, 174, 0.85);
+}
+
+.imgListeHeros, 
+.imgHerosArene {border-radius:100%;}
+
+.imgDerniersHeros {
+	width:40%;
+}
+
+.listeHeros {
+	width:8%;
+	margin:5px;
+}
+
+.imgListeHeros {
+	width:100%;
+}
+
+.imgHerosArene {
+	width:12%;
+}
+
+.imgBannieres {
+	width:75%;
 }

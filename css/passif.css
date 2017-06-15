@@ -1,0 +1,19 @@
+#passif p {
+    margin:14px;
+    font-size:19px;
+}
+.effetPassif {padding:8px;}
+
+.nomPassif, .effet, .coutPA, .coutTransmission, .restriction {
+    color:white;
+    text-shadow:2px 2px 2px black;
+    background-color:#0B4E87;
+}
+
+.restrictionPassif {padding:0;}
+
+#passif div.col-md-12,
+#passif div.col-md-8,
+#passif div.col-md-4 {
+    border:1px solid grey;
+}

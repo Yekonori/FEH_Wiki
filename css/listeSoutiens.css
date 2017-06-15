@@ -1,0 +1,41 @@
+h1 {
+	margin-top:35px;
+    margin-left:25px;
+    font-size:40px;
+}
+
+h2 {
+	margin:20px 0;
+	margin-left:35px;
+	font-size:32px;
+}
+
+.soutien, .soutienMenu {border:1px solid grey;}
+
+.tableauSoutiens {padding:50px;}
+
+.soutienMenu {background-color:#0B4E87;}
+
+.soutienMenu p {
+	color:white;
+	text-shadow:2px 2px 2px black;
+	padding:11px;
+	font-size:20px;
+}
+
+p, .soutien a {
+	margin:0;
+}
+
+.ligneP {
+  display:flex;
+}
+
+.ligne {
+  flex: 1;
+  flex-basis: auto;
+  padding:8px;
+  font-size:20px;
+}
+
+.soutienMenu {font-size:20px;}

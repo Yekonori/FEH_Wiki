@@ -1,0 +1,20 @@
+#soutien p {
+    margin:14px;
+    font-size:19px;
+}
+
+.effetSoutien {padding:8px;}
+
+.nomSoutien, .effet, .coutPA, .coutTransmission, .restriction {
+    color:white;
+    text-shadow:2px 2px 2px black;
+    background-color:#0B4E87;
+}
+
+.restrictionSoutien {padding:0;}
+
+#soutien div.col-md-12,
+#soutien div.col-md-8,
+#soutien div.col-md-4 {
+    border:1px solid grey;
+}

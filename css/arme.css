@@ -1,0 +1,18 @@
+#arme p {
+    margin:14px;
+    font-size:19px;
+}
+
+.effetArme {padding:8px;}
+
+.nomArme, .dmg, .por, .coutPA, .coutTransmission, .effet, .exclusif {
+    color:white;
+    text-shadow:2px 2px 2px black;
+    background-color:#0B4E87;
+}
+
+#arme div.col-md-12,
+#arme div.col-md-8,
+#arme div.col-md-4 {
+    border:1px solid grey;
+}

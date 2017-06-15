@@ -2,21 +2,6 @@
     #1. Connexion à la base de donnée
     include("ConnexionFE.php");
 
-    $heros = "SELECT `Nom :` FROM `héros` ORDER BY `ID :`";
-    $mesHeros = mysqli_query($link, $heros);
-
-    $LastHeros = "SELECT `Nom :`FROM `héros` ORDER BY `ID :` DESC LIMIT 0, 4";
-    $NvHeros = mysqli_query($link, $LastHeros);
-
-    $annonces = "SELECT * FROM `annonces` ORDER BY `ID :` DESC LIMIT 0, 3";
-    $dernieresAnnonces = mysqli_query($link, $annonces);
-
-    $persoArene = "SELECT `Nom :` FROM `bonus_arene` ORDER BY `ID :`";
-    $bonusArene = mysqli_query($link, $persoArene);
-
-    $bannieres = "SELECT * FROM `bannieres` ORDER BY `ID :`";
-    $bannieresActuelle = mysqli_query($link, $bannieres);
-
     if (mysqli_connect_errno($link)) {
         die("Erreur de connexion : ".mysqli_connect_error($link));
     }
@@ -30,7 +15,7 @@
 
 		<!-- CSS Bootstrap -->
 	    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-	    <!-- CSS perso' -->
+	    <!-- CSS Perso' -->
 	    <link href="css/general.css" type="text/css" rel="stylesheet">
 	    <link href="css/index.css" type="text/css" rel="stylesheet">
 	</head>
@@ -44,150 +29,205 @@
     					<img src="images/imgs/Logo.png" title="Logo" alt="Logo" class="logo"/>
     				</div> <!-- ./end div.col-md-3 -->
     			</div> <!-- ./end div.row -->
-    		</div> <!-- ./end div.container-flui -->
+    		</div> <!-- ./end div.container-fluid -->
     	</header>
-    	<!-- ******************************** SECTION.heros ******************************** -->
+    	<!-- ******************************** SECTION.contenu ******************************** -->
     	<!-- ******************************************************************************* -->
-    	<section class="heros">
+    	<section class="contenu">
     		<div class="container-fluid">
     			<div class="row">
     			<!-- ******************************** ASIDE ******************************** -->
-    				<div class="col-md-1">
-    					<aside class="Nav">
+    				<div class="col-md-1" id="menu">
+    					<aside class="nav">
                         <!-- ******************************** Collapse Nav ******************************** -->
                             <a href="#">
-                                <div data-toggle="collapse" href="#heros" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="heros"></span>Héros
+                                <div data-toggle="collapse" href="#liens_heros" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="liens_heros"></span>Héros
                                 </div>
                             </a>
-                            <div class="collapse text-center" id="heros">
-                              <div>
-                                <a href="#">Lien 1</a><br/>
-                                <a href="#">Lien 2</a><br/>
-                                <a href="#">Lien 3</a>
-                              </div>
+                            <div class="collapse text-center" id="liens_heros">
+                                <div>
+                                    <ul>
+                                        <li><a href="index.php">Accueil</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <hr/>
                             <a href="#">
-                                <div data-toggle="collapse" href="#techniques" aria-expanded="false" aria-controls="techniques">
-                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Techniques
+                                <div data-toggle="collapse" href="#liens_aptitudes" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="liens_aptitudes"></span>Aptitudes
                                 </div>
                             </a>
-                            <div class="collapse text-center" id="techniques">
-                              <div>
-                                <a href="#">Lien 1</a><br/>
-                                <a href="#">Lien 2</a><br/>
-                                <a href="#">Lien 3</a>
-                              </div>
+                            <div class="collapse text-center" id="liens_aptitudes">
+                                <div>
+                                    <ul>
+                                        <li><a href="listeArmes.php">Armes</a></li>
+                                        <li><a href="listeSoutiens.php">Soutiens</a></li>
+                                        <li><a href="listeSpéciales.php">Spéciales</a></li>
+                                        <li><a href="listePassifs.php">Passifs</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <hr/>
                             <a href="#">
-                                <div data-toggle="collapse" href="#autre" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="autre"></span>Autre
+                                <div data-toggle="collapse" href="#liens_guides" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-controls="liens_guides"></span>Guides
                                 </div>
                             </a>
-                            <div class="collapse text-center" id="autre">
-                              <div>
-                                <a href="#">Lien 1</a><br/>
-                                <a href="#">Lien 2</a><br/>
-                                <a href="#">Lien 3</a>
-                              </div>
+                            <div class="collapse text-center" id="liens_guides">
+                                <div>
+                                    <ul>
+                                        <li><a href="guideInvocation.html">Invocation</a></li>
+                                    </ul>
+                                </div>
                             </div>
-    					</aside>
-    				</div> <!-- ./end div.col-md-1 -->
-    				<div class="col-md-11">
+    					</aside> <!-- ./end aside.nav -->
+    				</div> <!-- ./end div.col-md-1 #menu -->
+    				<div class="col-md-11" id="contenu">
     					<div class="row">
     					<!-- ******************************** Liens Rapides ******************************** -->
-    						<div class="col-md-12 text-center">
+    						<div class="col-md-12 text-center" id="liensPrincipaux">
                                 <div class="col-md-4 liensRapides">
-                                    <img src="images/menu/Icon_Cercle_Alfonse.png" alt="#" title="#">
-                                    <a href="#">Héros</a>
+                                    <img src="images/menu/Icon_Cercle_Alfonse.png" alt="Menu_Alfonse" title="Menu_Héros">
+                                    <a href="index.php">Héros</a>
                                 </div> <!-- ./end div.col-md-4 -->
                                 <div class="col-md-4 liensRapides">
-                                    <img src="images/menu/Icon_Cercle_Sharena.png" alt="#" title="#">
-                                    <a href="#">Technique</a>
+                                    <img src="images/menu/Icon_Cercle_Sharena.png" alt="Menu_Sharena" title="Menu_Aptitudes">
+                                    <a href="listeSpéciales.php">Aptitudes</a>
                                 </div> <!-- ./end div.col-md-4 -->
                                 <div class="col-md-4 liensRapides">
-                                    <img src="images/menu/Icon_Cercle_Lucina.png" alt="#" title="#">
-                                    <a href="#">Autre</a>
+                                    <img src="images/menu/Icon_Cercle_Lucina.png" alt="Menu_Lucina" title="Menu_Autre">
+                                    <a href="#">Guide</a>
                                 </div> <!-- ./end div.col-md-4 -->
     						</div> <!-- ./end div.col-md-12 -->
     					</div> <!-- ./end div.row -->
                         <div class="col-md-7 text-center">
-    						<h1>Nouveaux Héros :</h1>
-    						<div class="row">
+                            <div class="row">
+                                <div class="col-md-12 etat">
+                                    <div class="row avance">
+                                        <p>Wiki en cours de construction...</p>
+                                    </div> <!-- ./end div.row -->
+                                    <div class="row">
+                                        <br/>
+                                        <p>
+                                            Totalement conçu par un fan et pour les fans, ce Wiki de Fire Emblem Heroes proposera un concentré d'information sur les diffèrents points du jeu, que ce soit des informations sur les Héros, les Armes, les Passifs ou n'importe quel autre élément du jeu, en plus de Guides pour les débutants.
+                                        </p>
+                                        <br/>
+                                        <p>
+                                            Ce Wiki vous intéresse ? Vous souhaitez aider à sa construction ?
+                                            <ul>
+                                                <li><a href="ajouterHéros.php">Ajouter un Héros</a></li>
+                                                <li><a href="ajouterArme.php">Ajouter une Arme</a></li>
+                                                <li><a href="ajouterSoutien.php">Ajouter un Soutien</a></li
+    >                                            <li><a href="ajouterSpéciale.php">Ajouter une Aptitude Spéciale </a></li>
+                                                <li><a href="ajouterPassif.php">Ajouter un Passif</a></li>
+                                            </ul>
+                                        </p>
+                                    </div> <!-- ./end div.row -->
+                                </div> <!-- ./end div.col-md-12 -->
+                            </div> <!-- ./end div.row -->
+                            <div class="row" id="nvHeros">
+                                <h1>Nouveaux Héros :</h1>
+                            </div> <!-- ./end div.row -->
+    						<div class="row" id="heros">
     						<!-- ******************************** Derniers Héros ******************************** -->
 	    						<div class="col-md-12 derniersHeros">
                                     <?php
-					                   $i = 0;
-					                   while ($data = mysqli_fetch_assoc($NvHeros)) {
-                                            echo '<div class="text-center" style="display:inline-block; width:24%;">
-				                                    <p>
-					                                   <img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid rgba(175, 174, 174, 0.85); width:40%"/>
-					                                   <br/>
-					                                   <a href="#">'.$data['Nom :'].'</a>
-				                                    </p>
-                                                </div>';
-                                            $i++;
+                                        $LastHeros = "SELECT `Nom :`, `Lien :` FROM `héros` ORDER BY `ID :` DESC LIMIT 0, 4";
+                                        $NvHeros = mysqli_query($link, $LastHeros);
+                                        $i = 0;
+                                        while ($data = mysqli_fetch_assoc($NvHeros)) {?>
+
+                                            <div class="text-center listeDerniersHeros">
+					                           <img src="images/icons/Icon_<?php echo $data['Nom :']?>.png" alt="<?php echo $data['Nom :']?>" title="<?php echo $data['Nom :']?>" class="imgDerniersHeros"/>
+					                           <br/>
+                                                <p>
+                                                    <a href="héros.php?lien=<?php echo $data['Lien :'];?>"><?php echo $data['Nom :']?></a>
+			                                    </p>
+                                            </div>
+
+                                            <?php $i++;
                                         }
                                     ?>
-						            <hr/>
+                                    <hr/>
 	    						</div> <!-- ./end div.col-md-12 -->
 	    						<div class="col-md-12">
 	    						<!-- ******************************** Tous les Héros ******************************** -->
-	    							<h2>Les Héros :</h2>
+                                    <h2>Les Héros :</h2>
                                     <?php
+                                        $heros = "SELECT `Nom :`, `Lien :` FROM `héros` ORDER BY `Nom :`";
+                                        $mesHeros = mysqli_query($link, $heros);
                                         $i = 0;
-                                        while ($data = mysqli_fetch_assoc($mesHeros)) {
-                                        echo '<div class="text-center" style="display:inline-block; width:8%; margin:5px;">
-                                                <p>
-                                                    <a href="#">
-                                                        <img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid rgba(175, 174, 174, 0.85); border-radius:100%; width:100%;"/>
-                                                    </a>
-                                                </p>
-                                            </div>';
-                                            $i++;
+                                        while ($data = mysqli_fetch_assoc($mesHeros)) {?>
+
+                                            <div class="text-center listeHeros">
+                                                <a href="héros.php?lien=<?php echo $data['Lien :'];?>">
+                                                    <img src="images/icons/Icon_<?php echo $data['Nom :']?>.png" alt="<?php echo $data['Nom :']?>" title="<?php echo $data['Nom :']?>" class="imgListeHeros" />
+                                                </a>
+                                            </div>
+
+                                            <?php $i++;
                                         }
                                     ?>
 	    						</div> <!-- ./end div.col-md-12 -->
     						</div> <!-- ./end div.row -->
     					</div> <!-- ./end div.col-md-7 -->
     					<div class="col-md-4 col-md-offset-1 text-center">
-    						<h3>Actualités : </h3>
-    						<div class="row">
+    						<div class="row" id="infos">
     							<div class="col-md-12">
     								<div class="row">
     									<div class="col-md-12">
-    										<h4>Dernière MàJ et annonces :</h4>
+                                            <div class="row actu" id="one">
+        									   <h3>Dernière MàJ et annonces :</h3>
+                                            </div> <!-- ./end div.row -->
     									</div> <!-- ./end div.col-md-12	-->
-    									<div class="col-md-12 text-left">
+    									<div class="col-md-12 text-left" id="maj">
     									<!-- ************************* Dernieres Annonces ************************* -->
     									<ul>
         									<?php
+                                                $annonces = "SELECT * FROM `annonces` ORDER BY `ID :` DESC LIMIT 0, 3";
+                                                $dernieresAnnonces = mysqli_query($link, $annonces);
     							                $i = 0;
     							                while ($data = mysqli_fetch_assoc($dernieresAnnonces)) {
-    							                	echo '<li>'.$data['Titre :'].'</li>';
-    							                	echo '<p>'.$data['Description :'].'</p>';
-    							                	$i++;
+                                                    $mysqldate = $data['Date :'];
+                                                    $phpdate = strtotime( $mysqldate );
+                                                    $mysqldate = date('d-m-Y', $phpdate);
+                                                    ?>
+
+    							                	<li>[<?php echo $mysqldate ?>]</li>
+    							                	<p><?php echo $data['Titre :']?></p>
+
+    							                	<?php $i++;
     							            	}
     							            ?>
 							            </ul>
+                                        <!--
+                                        <div class="col-md-12 text-right plusAnnonces">
+                                            <a href="#">Plus d'annonces</a>
+                                        </div>
+                                        -->
     									</div> <!-- ./end div.col-md-12	-->
     								</div> <!-- ./end div.row -->
     							</div> <!-- ./end div.col-md-12 -->
     							<div class="col-md-12">
     								<div class="row 7">
     									<div class="col-md-12">
-    										<h5>Héros Bonus d'Arène :</h5>
+                                            <div class="row actu">
+    										  <h4>Héros Bonus d'Arène :</h4>
+                                            </div> <!-- ./end div.row -->
     									</div> <!-- ./end div.col-md-12 -->
-    									<div class="col-md-12">
+    									<div class="col-md-12" id="arene">
                                         <!-- ************************* Héros Bonus d'Arène ************************* -->
                                         <!-- Héros Bonus d'Arene -->
                                             <?php
+                                                $persoArene = "SELECT `Héros Bonus :` FROM `appel_aux_armes` ORDER BY `ID :`";
+                                                $bonusArene = mysqli_query($link, $persoArene);
                                                 $i = 0;
-                                                while ($data = mysqli_fetch_assoc($bonusArene)) {
-                                                    echo '<img src="images/icons/Icon_'.$data['Nom :'].'.png" style="border:1.5px solid rgba(175, 174, 174, 0.85); border-radius:100%; width:12%;"/>';
-                                                    if ($i == 4) {
+                                                while ($data = mysqli_fetch_assoc($bonusArene)) {?>
+
+                                                    <img src="images/icons/Icon_<?php echo $data['Héros Bonus :']?>.png" alt="<?php echo $data['Héros Bonus :']?>" title="<?php echo $data['Héros Bonus :']?>" class="imgHerosArene"/>
+                                                    
+                                                    <?php if ($i == 4) {
                                                         echo '<br/>';
                                                     }
                                                     $i++;
@@ -199,24 +239,30 @@
     							<div class="col-md-12">
     								<div class="row 8">
     									<div class="col-md-12">
-    										<h6>Focus Actuels :</h6>
+                                            <div class="row actu">
+                                                <h5>Focus Actuels :</h5>   
+                                            </div> <!-- ./end div.row -->
     									</div> <!-- ./end div.col-md-12 -->
-    									<div class="col-md-12">
+    									<div class="col-md-12" id="focus">
                                         <!-- ************************* Bannières Actuelles ************************* -->
     										<?php
+                                                $bannieres = "SELECT * FROM `bannieres` ORDER BY `ID :`";
+                                                $bannieresActuelle = mysqli_query($link, $bannieres);
                                                 $i = 0;
-                                                $disparition = $data['Timestamp :'];
-                                                $dateajd = date('Y-m-d');
+                                                $dateajd = date('Y-m-d H:i:s');
                                                 while ($data = mysqli_fetch_assoc($bannieresActuelle)) {
-                                                    if ($data['Timestamp :'] > $dateajd) {
-                                                        echo '<div class="text-center" style="display:inline-block; width:70%;">
-                                                                <p>
-                                                                    <img src="images/bannieres/'.$data['Fichier :'].'.png" style=" width:75%" title="'.$data['Timestamp :'].'"/>
-                                                                    <br/>
-                                                                    '.$data['Nom :'].'
-                                                                </p>
-                                                            </div>';
-                                                    }
+                                                    $mysqldate = $data['Fin :'];
+                                                    $phpdate = strtotime( $mysqldate );
+                                                    $mysqldate = date('d-m-Y', $phpdate);
+                                                    if ($data['Fin :'] > $dateajd) {?>
+
+                                                        <div class="text-center" style="display:inline-block; width:70%;">
+                                                            <img src="images/bannieres/<?php echo $data['Chemin :']?>" title="<?php echo $mysqldate;?>" class="imgBannieres"/>
+                                                            <br/>
+                                                            <p><?php echo $data['Nom :']?></p>
+                                                        </div>
+
+                                                    <?php }
                                                     $i++;
                                                 }
                                             ?>
@@ -225,10 +271,16 @@
     							</div> <!-- ./end div.col-md-12 -->
     						</div> <!-- ./end div.row -->
     					</div> <!-- ./end div.col-md-4 -->
-    				</div> <!-- ./end div.col-md-11 -->
+    				</div> <!-- ./end div.col-md-11 #contenu -->
     			</div> <!-- ./end div.row -->
     		</div> <!-- ./end div.container-fluid -->
-    	</section> <!-- ./end section.heros -->
+    	</section> <!-- ./end section.contenu -->
+        <!-- ******************************** FOOTER ******************************** -->
+        <!-- ************************************************************************ -->
+        <footer class="text-right">
+            <p>Développé par : HiroStar</p>
+        </footer>
+        <!-- SCRIPT BOOTSTRAP -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
 	</body>

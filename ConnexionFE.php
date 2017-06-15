@@ -1,7 +1,4 @@
 <?php
-	#1. Connexion à la base de donnée
-	
-						//	Hote		user	pass	BDD
 	$link = mysqli_connect('localhost', 'root', '', 'fire_emblem_heroes');
 
 	if (mysqli_connect_errno()) {

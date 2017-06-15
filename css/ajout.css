@@ -1,0 +1,17 @@
+#container .row {margin:20px;}
+
+#container .col-md-4 {
+	padding:15px;
+	font-size:18px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+textarea {resize:none;}

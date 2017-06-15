@@ -1,0 +1,45 @@
+h1 {margin:25px 25px 0 25px;}
+
+h2 {
+    margin:15px;
+    margin-left:35px;
+    margin-bottom:45px;
+}
+
+h3 {margin:20px;}
+
+h1,
+.modifier,
+tbody td img,
+tbody td p {
+    display:inline-block;
+    width:48%;
+}
+
+.nom hr {
+    margin:0;
+    padding-bottom:65px;
+}
+
+thead tr {font-size:22px;}
+
+tbody td {font-size:20px;}
+
+tbody td p {
+	margin:0 auto;
+	padding-left:20px;}
+
+tbody td img {
+    padding:14px 0;
+    width:20%;
+}
+
+
+.ligneP {
+    display:flex;
+}
+
+.ligne {
+    flex:1;
+    flex-basis:auto;
+}
