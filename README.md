@@ -8,7 +8,7 @@ Grande base de donnée concentrant des informations de tout type sur le jeu - en
 
 Ainsi, le site contiendra des pages décrivant le personnage, son moyen d'obtention, ses armes et aptitudes ainsi que des pages pour les armes et les aptitudes avec leurs propriétaites.
 
-Les inscrits pourront, par formulaire, envoyer des informations qui seront à valider pour ajouter du contenu.
+Les utilisateurs pourront, par formulaire, envoyer des informations qui seront à valider pour ajouter, ou modifier, du contenu.
 
 <a href="https://ibb.co/ihk3Ha"><img src="https://preview.ibb.co/dwFQVv/Accueil.jpg" alt="Accueil" width=50%></a>
 <a href="https://ibb.co/fzAQVv"><img src="https://preview.ibb.co/gXmzqv/H_ros.jpg" alt="Heros" width=50%></a>
@@ -33,4 +33,4 @@ Site développé en HTML/CSS et PHP - pour la gestion des pages
 
 # Datas
 
-BDD des personnages (76) en ma possesion complète et celle des armes aussi
+Quelques Héros présents, ainsi que des Armes, des Aptitudes, des annonces et un guide.
